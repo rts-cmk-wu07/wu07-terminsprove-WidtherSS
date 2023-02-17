@@ -1,14 +1,17 @@
-
+import { BrowserRouter,Routes ,Route} from "react-router-dom";
 import Home from "./scenes/Home";
-import Navigation from "./scenes/Navigation";
 import Welcome from "./scenes/Welcome";
 
 function App() {
   return (
-    <div>
-      <Home/>
-    </div>
+    <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<Welcome/>}/>
+            <Route path="/home"  element={<Home/>} />
+        </Routes>  
+    </BrowserRouter>
+
   );
-}
+};
 
 export default App;
