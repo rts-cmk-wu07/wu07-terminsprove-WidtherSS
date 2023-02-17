@@ -1,8 +1,11 @@
 import React from 'react'
+import NavigationMenu from '../components/navigation/NavigationMenu'
 
 const Navigation = () => {
   return (
-    <div>Navigation</div>
+    <div>
+      <NavigationMenu/>
+    </div>
   )
 }
 

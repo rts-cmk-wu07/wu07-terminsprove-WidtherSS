@@ -1,9 +1,16 @@
 import React from 'react'
+import ClassesForu from '../components/home/ClassesForu';
+import HeroSection from '../components/home/HeroSection';
 
-function Home() {
+
+const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <HeroSection/>
+      <ClassesForu/>
+    </div>
   )
-}
+};
+
 
 export default Home
